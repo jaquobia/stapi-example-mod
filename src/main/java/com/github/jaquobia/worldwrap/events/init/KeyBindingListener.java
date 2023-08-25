@@ -1,4 +1,4 @@
-package net.glasslauncher.example.events.init;
+package com.github.jaquobia.worldwrap.events.init;
 
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.client.options.KeyBinding;
@@ -16,8 +16,8 @@ public class KeyBindingListener {
     @EventListener
     public void registerKeyBindings(KeyBindingRegisterEvent event) {
         List<KeyBinding> list = event.keyBindings;
-        list.add(keyBinding = new KeyBinding("key.examplemod.test", Keyboard.KEY_Y));
-        list.add(keyBinding2 = new KeyBinding("key.examplemod.test2", Keyboard.KEY_U));
-        list.add(keyBinding3 = new KeyBinding("key.examplemod.hurtme", Keyboard.KEY_I));
+        list.add(keyBinding = new KeyBinding("key.worldwrap.test", Keyboard.KEY_Y));
+        list.add(keyBinding2 = new KeyBinding("key.worldwrap.test2", Keyboard.KEY_U));
+        list.add(keyBinding3 = new KeyBinding("key.worldwrap.hurtme", Keyboard.KEY_I));
     }
 }

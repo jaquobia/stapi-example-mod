@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.jaquobia.worldwrap.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "EntityBaseMixin",
+    "FlattenedChunkMixin",
+    "ServerChunkCacheMixin"
+  ],
+  "server": [
+  ],
+  "client": [
+    "ChunkCacheMixin",
+    "MultiplayerChunkCacheMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
